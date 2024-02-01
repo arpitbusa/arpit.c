@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int pattern6(int n);
+int main()
+{
+int n=5;
+pattern6(n);
+return 0;
+}
+
+int pattern6(int n)
+{
+int i,j;
+for(i='A';i<='E';i++)
+{
+for(j='A';j<=i;j++)
+{
+printf("%c",j);
+}
+printf("\n");
+}
+return 0;
+}

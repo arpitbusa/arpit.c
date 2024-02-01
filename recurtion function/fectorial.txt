@@ -1,0 +1,20 @@
+#include<stdio.h>
+int fectorial(int number)
+{
+if(number==0||number==1)
+{
+return 1;
+}
+else
+{
+return number*fectorial(number-1);
+}
+}
+
+int main()
+{
+int number=5;
+int total=fectorial(number);
+printf("number is %d \nfectorial total is %d",number,total);
+return 0;
+}

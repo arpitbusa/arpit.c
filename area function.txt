@@ -1,0 +1,98 @@
+# include<stdio.h>
+void circle()
+{
+float pie=3.14;
+int radius;
+printf("enter the radius of circle :");
+scanf("%d",&radius);
+float area = (radius*radius*pie);
+printf("the area of the given circle :%f\n",area);
+}
+
+void square()
+{
+float area;
+printf("\nenter the area of square :");
+scanf("%f",&area);
+float formula = (area*area);
+printf("the area of the given square :%f\n",formula);
+}
+
+void rectriangle()
+{
+float width,lenght;
+printf("\nenter the value of width :");
+scanf("%f",&width);
+printf("enter the value of lenght :");
+scanf("%f",&lenght);
+float area = (width*lenght);
+printf("the area of the given rectriangle :%f\n",area);
+}
+
+void triangle()
+{
+float base,height;
+printf("\nenter the value of base :");
+scanf("%f",&base);
+printf("enter the value of height :");
+scanf("%f",&height);
+float area = (height*base/2);
+printf("the area of the given triangle :%f\n",area);
+
+}
+
+void intrest()
+{
+float principal,rate,time;
+printf("\nvalue of principal :");
+scanf("%f",&principal);
+printf("value of rate :");
+scanf("%f",&rate);
+printf("value of time :");
+scanf("%f",&time);
+float formula = (principal*rate*time/100);
+printf("the simple intrest :%f\n",formula);
+}
+
+void thirdvariable()
+{
+int a,b,c;
+printf("\nenter the first number is a :");
+scanf("%d",&a);
+printf("enter the second number is b :");
+scanf("%d",&b);
+c=a;
+a=b;
+b=c;
+printf("swapping value");
+printf("a=%d,b=%d",a,b);
+}
+
+void withoutthirdvariable()
+{
+int a=3;
+int b=6;
+printf("\n\na=%d",a);
+printf("\nb=%d",b);
+
+a=a+b;
+b=a-b;
+a=a-b;
+printf("\nswapping value");
+printf("a=%d,b=%d",a,b);
+}
+
+
+
+
+int main()
+{
+circle();
+square();
+rectriangle();
+triangle();
+intrest();
+thirdvariable();
+withoutthirdvariable();
+return 0;
+}

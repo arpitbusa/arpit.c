@@ -1,0 +1,15 @@
+#include<stdio.h>
+int simpleintrest(int a,int b,int c)
+{
+	int total=a*b*c/100;
+	return total;
+}
+int main()
+{
+	int a=20000;
+	int b=5;
+	int c=1;
+	int total=simpleintrest(a,b,c);
+	printf("this is total: %d\n",total);
+	return 0;
+}

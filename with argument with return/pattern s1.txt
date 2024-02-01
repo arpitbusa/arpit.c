@@ -1,0 +1,23 @@
+#include<stdio.h>
+int patterns1(int n);
+int main()
+{
+int n;
+
+patterns1(n);
+return 0;
+}
+
+int patterns1(int n)
+{
+int i,j;
+for(i=1;i<=5;i++)
+{
+for(j=1;j<=5;j++)
+{
+printf("%d",i);
+}
+printf("\n");
+}
+return 0;
+}

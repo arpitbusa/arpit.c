@@ -1,0 +1,24 @@
+#include<stdio.h>
+int patterns9(int n);
+int main()
+{
+int n=5;
+
+patterns9(n);
+return 0;
+}
+int patterns9(int n)
+{
+int m=11;
+for(int i=1;i<=5;i++)
+{
+for(int j=1;j<=5;j++)
+{
+printf("%d\t",m++);
+}
+m+=5;
+printf("\n");
+}
+return 0;
+}
+

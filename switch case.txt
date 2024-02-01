@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+int num=13;
+switch (num) {
+case 10:
+printf("Value is 10\n");
+break;
+case 12:
+printf("Value is 12\n");
+break;
+case 13:
+printf("Value is 13\n");
+break;
+default:
+printf("Value is not 10, 12, or 13\n");
+break;
+}
+
+return 0;
+}

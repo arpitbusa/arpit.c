@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    int *p1=&a;
+    int *p2=&b;
+    printf("enter a first number is a :-");
+    scanf("%d",&a);
+    printf("adress of a :-%p\n",&a);
+
+    printf("enter a second number is b :-");
+    scanf("%d",&b);
+    printf("adress of b :-%p\n",&b);
+
+    a=a+b;
+    b=a-b;
+    a=a-b;
+
+    printf("a=%d,b=%d",a,b);
+
+    return 0;
+}

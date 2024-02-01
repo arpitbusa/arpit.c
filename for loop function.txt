@@ -1,0 +1,258 @@
+#include<stdio.h>
+void print10to1 ()
+{
+int i;
+
+        for(i=10;i>=1;i--)
+ {
+  printf("%d\n",i);
+
+ }
+}
+
+void print51to99 ()
+{
+int i;
+
+    for(i=50; i<=99; i++){
+     printf("%d\n ",i);
+    }
+
+void print1toN ()
+{
+int Number,i=1;
+
+   printf("\n Please Enter any Integer Value  : ");
+   scanf("%d", &Number);
+
+   printf("\n List of Natural Numbers from 1 to %d are \n", Number);
+ while(i <= Number)
+   {
+     printf(" %d \t", i);
+     i++;
+   }
+}
+
+void Nto1 ()
+{
+int i, start;
+
+    printf("Enter starting value: ");
+    scanf("%d", &start);
+
+    for(i=start; i>=1; i--)
+    {
+        printf("%d\n", i);
+    }
+}
+
+void odd_no ()
+{
+int i, n;
+
+    printf("Print odd numbers till: ");
+    scanf("%d", &n);
+
+    printf("All odd numbers from 1 to %d are: \n", n);
+
+    for(i=1; i<=n; i++)
+    {
+        if(i%2!=0)
+        {
+            printf("%d\n", i);
+        }
+    }
+}
+
+void even_no ()
+{
+int a;
+for(a=2;a<=50;a=a+2)
+{
+printf("%d\t",a);
+}
+}
+
+void AtoZ ()
+{
+    char a;
+    for(a='A';a<='Z';a++)
+    {
+        printf("%c\t",a);
+    }
+}
+
+void A_65_Z_90 ()
+{
+    for(int a='A';a<='Z';a++)
+    {
+        printf("%c - %d\n",a,a);
+    }
+}
+
+void total_odd()
+{
+int i, n;
+
+    printf("Print odd numbers till: ");
+    scanf("%d", &n);
+
+    printf("All odd numbers from 1 to %d are: \n", n);
+
+    for(i=1; i<=n; i++)
+    {
+        if(i%2!=0)
+        {
+            printf("%d\n", i);
+        }
+    }
+}
+
+void total_even ()
+{
+int a, n;
+
+    printf("Print even numbers till: ");
+    scanf("%d", &n);
+
+    printf("All even numbers from 1 to %d are: \n", n);
+
+   for(a=2;a<=n;a=a+2)
+   {
+       printf("%d\t",a);
+   }
+}
+
+void s1 ()
+{
+	int i=1,sum=0,n;
+	printf("enter the number:-");
+	scanf("%d",&n);
+	do{
+
+		sum=i*i;
+		printf("%d\t",sum);
+		i++;
+	}while(i<=n);
+}
+
+void s2()
+{
+	int i=1,sum=0,n;
+	printf("enter the number:-");
+	scanf("%d",&n);
+	do{
+		if(i%2==0){
+		sum=i*i;
+		printf("%d\n",sum);
+		}
+		else
+		{
+			printf("%d\n",i);
+		}
+		i++;
+	}while(i<=n);
+}
+
+void s3 ()
+{
+	int i=1,n;
+	printf("enter the number:-");
+	scanf("%d",&n);
+	do{
+
+		printf("%d\n",i);
+		i*=2;
+	}while(i<=n);
+}
+
+void s4()
+{
+	char i='A';
+	int n;
+	printf("enter the value:-");
+	scanf("%d",&n);
+	do{
+		if(i%2!=0)
+		{
+			printf("%c\t",i);
+		}
+		i++;
+	}while(i<=n);
+}
+
+void s5()
+{
+	int i=1,j=1,n;
+	printf("enter the number:-");
+	scanf("%d",&n);
+	do{
+
+		printf("%d\t",i*j);
+		i++;
+		j*=2;
+
+	}while(i<=n);
+}
+
+
+void s6 ()
+{
+	int i=1,a1=0,a2=1,sum=0,n;
+	printf("enter the number:-");
+	scanf("%d",&n);
+	do{
+
+		printf("%d\n",sum);
+		a1=a2;
+		a2=sum;
+		sum=a1+a2;
+		i++;
+
+	}while(i<=n);
+}
+void s8 ()
+{
+	int i=65,n;
+
+	printf("enter the value:-");
+	scanf("%d",&n);
+
+
+	do{
+		if(i%4==1)
+		{
+			printf("%c\n",i);
+		}
+		{
+			printf("%c\n",i+32);
+		}
+
+		i++;
+	}while(i<=n);
+}
+
+
+
+ int main()
+{
+print10to1 ();
+print51to99 ();
+print1toN ();
+Nto1 ();
+odd_no ();
+even_no ();
+AtoZ ();
+A_65_Z_90 ();
+total_odd();
+total_even ();
+s1 ();
+s2 ();
+s3 ();
+s4();
+s5 ();
+s6 ();
+s8 ();
+return 0;
+}
+
